@@ -1,0 +1,5 @@
+localhost:
+  suites:
+    default:
+      context:
+        - FeatureContext
