@@ -1,5 +1,19 @@
-localhost:
+default:
   suites:
     default:
-      context:
-        - FeatureContext
+      contexts:
+        - Acceptance\Context\FeatureContext
+        - Acceptance\Context\WebContext
+
+  extensions:
+    SensioLabs\Behat\PageObjectExtension:
+      namespaces:
+        page: [Acceptance\Page]
+    Behat\MinkExtension:
+      base_url: 'http://localhost:8888'
+      default_session: goutte
+      sessions:
+        goutte:
+          goutte:
+            guzzle_parameters:
+              verify: false

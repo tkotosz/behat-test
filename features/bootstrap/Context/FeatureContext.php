@@ -1,5 +1,7 @@
 <?php
 
+namespace Acceptance\Context;
+
 use Behat\Behat\Tester\Exception\PendingException;
 use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\PyStringNode;

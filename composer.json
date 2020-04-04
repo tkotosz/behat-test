@@ -2,7 +2,10 @@
     "name": "tkotosz/behat-test",
     "type": "project",
     "require-dev": {
-        "behat/behat": "^3.5"
+        "behat/behat": "^3.5",
+        "sensiolabs/behat-page-object-extension": "^2.3",
+        "behat/mink-extension": "^2.3",
+        "behat/mink-goutte-driver": "^1.2"
     },
     "authors": [
         {
@@ -10,5 +13,10 @@
             "email": "tkotosz@inviqa.com"
         }
     ],
+    "autoload-dev": {
+        "psr-4": {
+            "Acceptance\\": "features/bootstrap"
+        }
+    },
     "require": {}
 }
